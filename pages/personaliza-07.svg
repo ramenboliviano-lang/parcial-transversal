@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Imagen para personalizar">
+  <rect width="640" height="480" fill="#2c241f"/>
+  <rect x="140" y="112" width="360" height="236" rx="20" fill="#c4a882"/>
+  <path d="M206 214h228M206 258h160" stroke="#fbf8f2" stroke-width="18" stroke-linecap="round"/>
+  <text x="320" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#c4a882">Imagen 07</text>
+</svg>

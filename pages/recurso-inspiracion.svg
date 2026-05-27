@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Collage de empaques eco economicos">
+  <rect width="1200" height="520" fill="#f6efe3"/>
+  <rect x="94" y="76" width="278" height="166" rx="24" fill="#c4a882"/>
+  <rect x="462" y="76" width="278" height="166" rx="24" fill="#fbf8f2"/>
+  <rect x="828" y="76" width="278" height="166" rx="24" fill="#d9c3a1"/>
+  <rect x="216" y="282" width="278" height="166" rx="24" fill="#fbf8f2"/>
+  <rect x="706" y="282" width="278" height="166" rx="24" fill="#c4a882"/>
+  <circle cx="234" cy="160" r="44" fill="#8b6f47"/>
+  <path d="M520 160h160M884 160h166M274 366h160M766 366h158" stroke="#5d4228" stroke-width="18" stroke-linecap="round"/>
+  <text x="600" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#5d4228">Ideas eco accesibles</text>
+</svg>

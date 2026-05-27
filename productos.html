@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Envuelto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="main-nav"></nav>
+  <main>
+    <section class="productos-hero">
+      <h1>Catálogo de productos ecológicos</h1>
+      <p>Descubre nuestras cajas, bolsas, stickers y más.</p>
+    </section>
+
+    <section class="productos-catalogo" aria-label="Catálogo completo de productos ecológicos">
+      <div class="productos-tabs" aria-label="Categorías del catálogo">
+        <button class="productos-tab active" type="button" data-product-slide="0">Bolsas</button>
+        <button class="productos-tab" type="button" data-product-slide="1">Cajas</button>
+        <button class="productos-tab" type="button" data-product-slide="2">Envases</button>
+        <button class="productos-tab" type="button" data-product-slide="3">Tarjetas</button>
+        <button class="productos-tab" type="button" data-product-slide="4">Cintas y sellados</button>
+        <button class="productos-tab" type="button" data-product-slide="5">Relleno y protección</button>
+      </div>
+
+      <div class="productos-carousel">
+        <button class="productos-arrow productos-prev" type="button" aria-label="Categoría anterior">‹</button>
+        <div class="productos-track" id="productosTrack">
+          <article class="productos-slide">
+            <h2>Bolsas</h2>
+            <div class="productos-grid">
+              <div class="producto-card">
+                <div class="producto-img bolsa-kraft"></div>
+                <div class="producto-info">
+                  <h3>Bolsas de papel Kraft</h3>
+                  <p>Con asas de cordón de algodón o papel retorcido.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img bolsa-tela"></div>
+                <div class="producto-info">
+                  <h3>Bolsas de tela reutilizables</h3>
+                  <p>En tocuyo, lienzo o algodón orgánico, ideales para diseño de identidad textil o corporativa.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img mailer"></div>
+                <div class="producto-info">
+                  <h3>Sobres de envío (Mailers)</h3>
+                  <p>Compostables y resistentes al agua para envíos de e-commerce.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="productos-slide">
+            <h2>Cajas</h2>
+            <div class="productos-grid">
+              <div class="producto-card">
+                <div class="producto-img caja-auto"></div>
+                <div class="producto-info">
+                  <h3>Cajas autoarmables</h3>
+                  <p>De cartón microcorrugado reciclado, perfectas para unboxing.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img caja-premium"></div>
+                <div class="producto-info">
+                  <h3>Cajas rígidas premium</h3>
+                  <p>Con base y tapa para productos de lujo o joyería, forradas con papeles libres de ácido.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img tubo-carton"></div>
+                <div class="producto-info">
+                  <h3>Tubos de cartón</h3>
+                  <p>Para láminas, posters, planos o textiles enrollados.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="productos-slide">
+            <h2>Envases</h2>
+            <div class="productos-grid">
+              <div class="producto-card">
+                <div class="producto-img frasco-vidrio"></div>
+                <div class="producto-info">
+                  <h3>Frascos de vidrio</h3>
+                  <p>Con tapas de bambú o corcho natural para cosmética o alimentos.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img envase-aluminio"></div>
+                <div class="producto-info">
+                  <h3>Envases de aluminio</h3>
+                  <p>Ligeros, infinitamente reciclables, ideales para bálsamos, velas o cremas.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img pulpa-celulosa"></div>
+                <div class="producto-info">
+                  <h3>Contenedores de pulpa de celulosa</h3>
+                  <p>Biodegradables y moldeados para proteger botellas o productos delicados.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="productos-slide">
+            <h2>Tarjetas y Etiquetas</h2>
+            <div class="productos-grid">
+              <div class="producto-card">
+                <div class="producto-img tarjeta-semilla"></div>
+                <div class="producto-info">
+                  <h3>Tarjetas de agradecimiento</h3>
+                  <p>En papel plantable con semillas o papeles texturizados de algodón reciclado.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img hang-tag"></div>
+                <div class="producto-info">
+                  <h3>Etiquetas colgantes</h3>
+                  <p>Con perforación para hilos de yute o cáñamo.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img faja-papel"></div>
+                <div class="producto-info">
+                  <h3>Fajas de papel</h3>
+                  <p>Para envolver prendas de ropa o cerrar cajas sin necesidad de adhesivos plásticos.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="productos-slide">
+            <h2>Cintas y Sellados</h2>
+            <div class="productos-grid">
+              <div class="producto-card">
+                <div class="producto-img cinta-kraft"></div>
+                <div class="producto-info">
+                  <h3>Cinta adhesiva de papel Kraft</h3>
+                  <p>Activada por agua o autoadhesiva, con pegamento ecológico a base de almidón.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img sticker-eco"></div>
+                <div class="producto-info">
+                  <h3>Stickers ecorresponsables</h3>
+                  <p>Con adhesivos acrílicos al agua y papel de soporte reciclado.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img cordon-natural"></div>
+                <div class="producto-info">
+                  <h3>Hilos y cordones naturales</h3>
+                  <p>De yute texturizado o algodón crudo para acabados artesanales.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="productos-slide">
+            <h2>Relleno y Protección</h2>
+            <div class="productos-grid">
+              <div class="producto-card">
+                <div class="producto-img tissue"></div>
+                <div class="producto-info">
+                  <h3>Papel de seda ecológico</h3>
+                  <p>Impreso con tintas a base de soja para envolver el producto por dentro.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img nido-abeja"></div>
+                <div class="producto-info">
+                  <h3>Papel Kraft nido de abeja</h3>
+                  <p>La alternativa sostenible, geométrica y de alto impacto visual al plástico de burbujas.</p>
+                </div>
+              </div>
+              <div class="producto-card">
+                <div class="producto-img viruta"></div>
+                <div class="producto-info">
+                  <h3>Viruta de madera certificada</h3>
+                  <p>Para rellenar espacios, amortiguar golpes y aportar volumen con textura natural.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <button class="productos-arrow productos-next" type="button" aria-label="Categoría siguiente">›</button>
+      </div>
+    </section>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="menu.js"></script>
+  <script>
+    const productosTrack = document.getElementById('productosTrack');
+    const productosSlides = [...document.querySelectorAll('.productos-slide')];
+    const productosTabs = [...document.querySelectorAll('.productos-tab')];
+    const prev = document.querySelector('.productos-prev');
+    const next = document.querySelector('.productos-next');
+    let activeProductSlide = 0;
+
+    function goToProductSlide(index) {
+      activeProductSlide = (index + productosSlides.length) % productosSlides.length;
+      productosTrack.scrollTo({ left: productosSlides[activeProductSlide].offsetLeft - productosTrack.offsetLeft, behavior: 'smooth' });
+      productosTabs.forEach(tab => tab.classList.toggle('active', Number(tab.dataset.productSlide) === activeProductSlide));
+    }
+
+    productosTabs.forEach(tab => tab.addEventListener('click', () => goToProductSlide(Number(tab.dataset.productSlide))));
+    prev.addEventListener('click', () => goToProductSlide(activeProductSlide - 1));
+    next.addEventListener('click', () => goToProductSlide(activeProductSlide + 1));
+  </script>
+</body>
+</html>

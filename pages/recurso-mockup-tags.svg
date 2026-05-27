@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Mockup de etiquetas colgantes">
+  <rect width="640" height="480" fill="#fbf8f2"/>
+  <path d="M190 96h150l58 58v230H190z" fill="#d9c3a1"/>
+  <path d="M318 116h132l48 48v198H318z" fill="#c4a882"/>
+  <circle cx="282" cy="150" r="18" fill="#fbf8f2"/>
+  <circle cx="404" cy="164" r="16" fill="#fbf8f2"/>
+  <path d="M282 150c62-70 120-62 122 14" fill="none" stroke="#8b6f47" stroke-width="10" stroke-linecap="round"/>
+  <text x="320" y="426" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5d4228">Hang tags</text>
+</svg>

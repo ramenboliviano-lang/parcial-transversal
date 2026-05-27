@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotiza | Envuelto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="standard-page">
+  <nav id="main-nav"></nav>
+  <main class="cotiza-page">
+    <section class="cotiza-hero">
+      <p class="section-tag">Calculadora de packaging</p>
+      <h1>Arma tu experiencia de unboxing y calcula el costo al instante</h1>
+      <p>Combina empaques, cierres, rellenos y tecnicas de personalizacion para estimar tu inversion directamente en bolivianos.</p>
+    </section>
+
+    <section class="quote-guide" aria-label="Instrucciones de uso">
+      <div class="quote-guide-inner">
+        <h2>Funcionamiento</h2>
+        <ul>
+          <li><strong>Elige tus productos:</strong> selecciona el tipo de empaque o servicio de personalizacion que necesitas en cada categoria.</li>
+          <li><strong>Arma un combo:</strong> puedes anadir multiples elementos de empaque para calcular el costo total de tu experiencia de unboxing.</li>
+          <li><strong>Aplica un descuento:</strong> si cuentas con un codigo promocional o descuento por volumen, ingresalo en el campo final.</li>
+          <li><strong>Resultados en tiempo real:</strong> en el sumario veras el desglose instantaneo normal, emprendedor y mayorista.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cotizador" aria-label="Calculadora de cotizacion">
+      <form id="cotizadorForm" class="cotizador-form">
+        <div class="quote-field">
+          <label for="cantidad">Cantidad de unidades</label>
+          <input id="cantidad" name="cantidad" type="number" min="1" step="1" value="100">
+          <small>La tarifa mayorista se activa desde 500 unidades.</small>
+        </div>
+
+        <div class="quote-field">
+          <label for="bolsas">Selecciona el tipo de bolsa</label>
+          <select id="bolsas" name="bolsas" data-category="Bolsas">
+            <option value="0">Seleccionar valor</option>
+            <option value="3.15">Bolsa Kraft clasica (Con asas de papel)</option>
+            <option value="5.25">Bolsa Kraft premium (Con asas de algodon organico)</option>
+            <option value="9.10">Bolsa de tela reutilizable (Tocuyo / Lienzo)</option>
+            <option value="4.20">Sobres de envio compostables (Mailers para e-commerce)</option>
+          </select>
+        </div>
+
+        <div class="quote-field">
+          <label for="cajas">Selecciona el tipo de caja</label>
+          <select id="cajas" name="cajas" data-category="Cajas">
+            <option value="0">Seleccionar valor</option>
+            <option value="6.65">Caja autoarmable (Carton microcorrugado reciclado)</option>
+            <option value="16.80">Caja rigida premium (Con tapa y base, libre de acido)</option>
+            <option value="8.05">Tubo de carton circular (Para laminas o textiles)</option>
+          </select>
+        </div>
+
+        <div class="quote-field">
+          <label for="envases">Selecciona el tipo de envase</label>
+          <select id="envases" name="envases" data-category="Envases">
+            <option value="0">Seleccionar valor</option>
+            <option value="12.60">Frasco de vidrio (Con tapa de bambu o corcho)</option>
+            <option value="10.15">Envase de aluminio reciclable (Para cosmetica o velas)</option>
+            <option value="5.95">Contenedor de pulpa de celulosa moldeada</option>
+          </select>
+        </div>
+
+        <div class="quote-field">
+          <label for="papeleria">Selecciona papeleria complementaria</label>
+          <select id="papeleria" name="papeleria" data-category="Tarjetas y Etiquetas">
+            <option value="0">Seleccionar valor</option>
+            <option value="1.96">Tarjeta de agradecimiento (Papel plantable con semillas)</option>
+            <option value="1.54">Etiquetas colgantes (Hang tags de carton kraft)</option>
+            <option value="1.26">Fajas de papel reciclado para prendas</option>
+          </select>
+        </div>
+
+        <div class="quote-field">
+          <label for="sellados">Selecciona el metodo de cierre</label>
+          <select id="sellados" name="sellados" data-category="Cintas y Sellados">
+            <option value="0">Seleccionar valor</option>
+            <option value="1.12">Cinta adhesiva de papel Kraft (Activada por agua)</option>
+            <option value="0.84">Stickers ecorresponsables (Adhesivo al agua)</option>
+            <option value="1.40">Hilo de yute o cordon de algodon crudo</option>
+          </select>
+        </div>
+
+        <div class="quote-field">
+          <label for="relleno">Selecciona el material de proteccion</label>
+          <select id="relleno" name="relleno" data-category="Relleno y Proteccion">
+            <option value="0">Seleccionar valor</option>
+            <option value="2.24">Papel de seda (Tissue) impreso con tinta de soya</option>
+            <option value="3.36">Papel Kraft nido de abeja (Antigolpes geometrico)</option>
+            <option value="1.82">Viruta de madera certificada</option>
+          </select>
+        </div>
+
+        <div class="quote-field">
+          <label for="personalizacion">Elige el sistema de impresion</label>
+          <select id="personalizacion" name="personalizacion" data-category="Tecnicas de Personalizacion">
+            <option value="0">Seleccionar valor</option>
+            <option value="2.66">Impresion basica a una tinta (Tinta al agua / Soya)</option>
+            <option value="4.90">Serigrafia artesanal (Libre de plasticos)</option>
+            <option value="6.65">Stamping ecologico certificado (Hot/Cold foil reciclable)</option>
+            <option value="0">Sin impresion (Sustrato liso / DIY para sello casero)</option>
+          </select>
+        </div>
+
+        <div class="quote-field">
+          <label for="descuento">Descuento por volumen o paquete (se resta)</label>
+          <input id="descuento" name="descuento" type="number" min="0" step="0.01" value="0">
+          <small>Ingresa el monto del descuento o cupon en bolivianos.</small>
+        </div>
+
+        <button type="submit" class="quote-submit">Calcular cotizacion</button>
+      </form>
+
+      <aside class="quote-summary" aria-label="Sumario de cotizacion">
+        <div class="quote-summary-header">
+          <h2>Sumario</h2>
+          <button id="resetCotizador" type="button" class="summary-reset" aria-label="Reiniciar calculadora">Reset</button>
+        </div>
+
+        <div class="summary-table">
+          <div class="summary-row summary-heading">
+            <span>Elementos seleccionados</span>
+            <strong>Total</strong>
+          </div>
+          <div id="summaryItems" class="summary-items">
+            <p class="summary-empty">Elige una o mas categorias y presiona calcular.</p>
+          </div>
+        </div>
+
+        <div class="summary-totals">
+          <h3>Desglose de cotizacion</h3>
+          <div class="summary-row">
+            <span>Subtotal de seleccion</span>
+            <strong id="subtotalBs">Bs. 0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Descuento aplicado</span>
+            <strong id="summaryDiscount">Bs. 0.00</strong>
+          </div>
+          <div class="summary-row summary-total-final">
+            <span>Total estimado</span>
+            <strong id="totalBs">Bs. 0.00</strong>
+          </div>
+        </div>
+
+        <div class="summary-totals summary-options">
+          <h3>Opciones de tarifa</h3>
+          <div class="summary-row">
+            <span>Tarifa Emprendedor / Junior</span>
+            <strong id="emprendedorBs">Bs. 0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Tarifa Mayorista (Mas de 500 unidades)</span>
+            <strong id="mayoristaBs">No aplica</strong>
+          </div>
+          <p id="summaryNote" class="summary-note">La tarifa mayorista se activa desde 500 unidades.</p>
+        </div>
+      </aside>
+
+      <div class="quote-whatsapp">
+        <h2>¿Listo para revisar tu empaque?</h2>
+        <p>Escribeme por WhatsApp, envia tus diseños y adjunta una captura de esta cotizacion para avanzar mas rapido.</p>
+        <a href="https://wa.me/?text=Hola%2C%20quiero%20enviar%20mis%20dise%C3%B1os%20y%20una%20captura%20de%20mi%20cotizaci%C3%B3n%20para%20revisar%20mi%20empaque." class="quote-whatsapp-btn" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="menu.js"></script>
+  <script>
+    const form = document.getElementById('cotizadorForm');
+    const resetButton = document.getElementById('resetCotizador');
+    const summaryItems = document.getElementById('summaryItems');
+    const moneyBs = new Intl.NumberFormat('es-BO', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    function getNumber(id) {
+      const value = parseFloat(document.getElementById(id).value);
+      return Number.isFinite(value) ? value : 0;
+    }
+
+    function formatBs(value) {
+      return `Bs. ${moneyBs.format(value)}`;
+    }
+
+    function calculateQuote() {
+      const quantity = Math.max(parseInt(document.getElementById('cantidad').value, 10) || 0, 0);
+      const discount = Math.max(getNumber('descuento'), 0);
+      const selects = [...form.querySelectorAll('select[data-category]')];
+      const activeItems = selects
+        .map(select => {
+          const unitPrice = parseFloat(select.value) || 0;
+          const selectedText = select.options[select.selectedIndex].text;
+          return {
+            category: select.dataset.category,
+            label: selectedText,
+            total: unitPrice * quantity
+          };
+        })
+        .filter(item => item.total > 0);
+
+      const subtotal = activeItems.reduce((sum, item) => sum + item.total, 0);
+      const appliedDiscount = Math.min(discount, subtotal);
+      const net = Math.max(subtotal - appliedDiscount, 0);
+      const emprendedorBs = net * 0.85;
+      const mayoristaAplica = quantity >= 500;
+      const mayoristaBs = mayoristaAplica ? net * 0.75 : net;
+
+      summaryItems.innerHTML = activeItems.length
+        ? activeItems.map(item => `
+          <div class="summary-row">
+            <span>${item.category}</span>
+            <strong>${formatBs(item.total)}</strong>
+          </div>
+          <small>${item.label}</small>
+        `).join('')
+        : '<p class="summary-empty">No seleccionaste ninguna categoria. Puedes cotizar solo las partes que necesites.</p>';
+
+      document.getElementById('subtotalBs').textContent = formatBs(subtotal);
+      document.getElementById('summaryDiscount').textContent = formatBs(appliedDiscount);
+      document.getElementById('totalBs').textContent = formatBs(net);
+      document.getElementById('emprendedorBs').textContent = formatBs(emprendedorBs);
+      document.getElementById('mayoristaBs').textContent = mayoristaAplica ? formatBs(mayoristaBs) : 'No aplica';
+      document.getElementById('summaryNote').textContent = mayoristaAplica
+        ? 'Descuento mayorista aplicado por cantidad mayor o igual a 500 unidades.'
+        : 'La tarifa mayorista se activa desde 500 unidades.';
+    }
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      calculateQuote();
+    });
+    resetButton.addEventListener('click', () => {
+      form.reset();
+      summaryItems.innerHTML = '<p class="summary-empty">Elige una o mas categorias y presiona calcular.</p>';
+      document.getElementById('subtotalBs').textContent = formatBs(0);
+      document.getElementById('summaryDiscount').textContent = formatBs(0);
+      document.getElementById('totalBs').textContent = formatBs(0);
+      document.getElementById('emprendedorBs').textContent = formatBs(0);
+      document.getElementById('mayoristaBs').textContent = 'No aplica';
+      document.getElementById('summaryNote').textContent = 'La tarifa mayorista se activa desde 500 unidades.';
+    });
+  </script>
+</body>
+</html>

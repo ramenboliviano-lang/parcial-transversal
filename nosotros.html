@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | Envuelto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div id="main-nav"></div>
+
+<main>
+  <section class="about-section" id="nosotros">
+    <div class="about-intro">
+      <p class="section-tag fade-up">Nosotros</p>
+      <h2 class="fade-up">Diseñamos packaging con <em>propósito</em></h2>
+      <p class="fade-up">Somos una empresa especializada en packaging sustentable y ecológico. Desarrollamos soluciones responsables que combinan innovación, funcionalidad y compromiso ambiental para crear envases alineados con una economía circular.</p>
+    </div>
+
+    <div class="about-image-gallery fade-up" id="ciclo" aria-label="Infografías sobre packaging sustentable">
+      <figure class="about-image-card">
+        <img src="assets/impacto-packaging.png" alt="Infografía sobre el impacto de los packaging no sustentables en el planeta">
+        <figcaption>Impacto ambiental del packaging no sustentable</figcaption>
+      </figure>
+      <figure class="about-image-card about-image-card-large">
+        <img src="assets/ciclo-packaging.png" alt="Infografía del ciclo de vida del packaging sustentable">
+        <figcaption>Ciclo de vida del packaging sustentable</figcaption>
+      </figure>
+      <figure class="about-image-card about-image-card-wide">
+        <img src="assets/basura-santa-cruz.png" alt="Gráfico sobre el aumento de basura en Santa Cruz entre 2023 y 2025">
+        <figcaption>Aumento de basura en Santa Cruz</figcaption>
+      </figure>
+    </div>
+
+<div class="about-video fade-up" id="proceso">
+  <div class="video-copy">
+    <p class="section-tag">Video de presentación</p>
+    <h3>Conocé nuestra visión</h3>
+    <p>
+      Descubrí cómo transformamos materiales responsables en experiencias sostenibles para marcas y consumidores.
+    </p>
+  </div>
+
+  <div class="video-frame has-video" role="button" tabindex="0" aria-label="Reproducir video corporativo de Envuelto">
+    
+    <video id="brandVideo" preload="metadata" controls playsinline>
+      <source src="assets/Tendencias de Packaging.mp4" type="video/mp4">
+      Tu navegador no puede reproducir este video.
+    </video>
+
+  </div>
+</div>
+
+  </section>
+
+  <section class="benefits" id="beneficios">
+    <div class="benefits-header">
+      <div>
+        <p class="section-tag">Beneficios</p>
+        <h2>Diseño responsable que crea <em>valor real.</em></h2>
+      </div>
+      <p>Cada decisión de material, forma y cierre busca reducir impacto, mejorar la experiencia y mantener los recursos dentro del ciclo.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-cell fade-up"><div class="benefit-icon">♻</div><h3>Menor impacto ambiental</h3><p>Reducimos contaminación y emisiones.</p></div>
+      <div class="benefit-cell fade-up"><div class="benefit-icon">◎</div><h3>Economía circular</h3><p>Los materiales continúan dentro del ciclo.</p></div>
+      <div class="benefit-cell fade-up"><div class="benefit-icon">✦</div><h3>Consumidores conscientes</h3><p>Las marcas responsables generan mayor conexión.</p></div>
+      <div class="benefit-cell fade-up"><div class="benefit-icon">◈</div><h3>Valor para tu marca</h3><p>Diseño sustentable que crea diferenciación.</p></div>
+    </div>
+  </section>
+
+  <section class="mission-values" id="valores">
+    <div class="mission-grid">
+      <article class="mission-card fade-up">
+        <p class="section-tag">Misión</p>
+        <h2>Crear packaging ecológico que combine diseño, funcionalidad y responsabilidad ambiental.</h2>
+      </article>
+      <article class="mission-card fade-up">
+        <p class="section-tag">Visión</p>
+        <h2>Impulsar un futuro donde cada envase forme parte de una economía circular.</h2>
+      </article>
+    </div>
+    <div class="values-panel fade-up">
+      <p class="section-tag">Valores</p>
+      <div class="values-list" aria-label="Valores de Envuelto">
+        <span>Sustentabilidad</span>
+        <span>Innovación</span>
+        <span>Diseño consciente</span>
+        <span>Responsabilidad</span>
+        <span>Compromiso ambiental</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="planet-quote" aria-label="Frase final destacada">
+    <p>Pequeñas decisiones generan grandes cambios para el planeta.</p>
+  </section>
+</main>
+
+<footer id="main-footer"></footer>
+
+<script src="menu.js"></script>
+<script>
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    cursor.style.transform = `translate(${mouseX - 5}px, ${mouseY - 5}px)`;
+  });
+
+  function animateRing() {
+    ringX += (mouseX - ringX - 18) * 0.15;
+    ringY += (mouseY - ringY - 18) * 0.15;
+    ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
+    requestAnimationFrame(animateRing);
+  }
+  animateRing();
+
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.transform += ' scale(1.5)';
+      ring.style.width = '56px'; ring.style.height = '56px';
+      ring.style.opacity = '0.3';
+    });
+    el.addEventListener('mouseleave', () => {
+      ring.style.width = '36px'; ring.style.height = '36px';
+      ring.style.opacity = '0.5';
+    });
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  const videoFrame = document.querySelector('.video-frame');
+  const brandVideo = document.getElementById('brandVideo');
+
+  function updateVideoState() {
+    const isPlaying = !brandVideo.paused && !brandVideo.ended;
+    videoFrame.classList.toggle('is-playing', isPlaying);
+    videoFrame.setAttribute(
+      'aria-label',
+      isPlaying
+        ? 'Pausar video corporativo de Envuelto'
+        : 'Reproducir video corporativo de Envuelto'
+    );
+  }
+
+  function toggleVideo() {
+    if (brandVideo.paused || brandVideo.ended) {
+      brandVideo.play();
+    } else {
+      brandVideo.pause();
+    }
+  }
+
+  videoFrame.addEventListener('click', event => {
+    if (event.target === brandVideo) return;
+    toggleVideo();
+  });
+
+  videoFrame.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      toggleVideo();
+    }
+  });
+
+  brandVideo.addEventListener('play', updateVideoState);
+  brandVideo.addEventListener('pause', updateVideoState);
+  brandVideo.addEventListener('ended', updateVideoState);
+
+</script>
+</body>
+</html>

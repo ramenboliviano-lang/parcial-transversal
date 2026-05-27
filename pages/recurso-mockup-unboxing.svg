@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Mockup de unboxing">
+  <rect width="640" height="480" fill="#fbf8f2"/>
+  <rect x="142" y="178" width="356" height="160" rx="20" fill="#c4a882"/>
+  <path d="M142 178l178-78 178 78M320 100v238" fill="none" stroke="#8b6f47" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M214 250h212" stroke="#f6efe3" stroke-width="18" stroke-linecap="round"/>
+  <text x="320" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5d4228">Unboxing</text>
+</svg>

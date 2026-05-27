@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Imagen para personalizar">
+  <rect width="640" height="480" fill="#f6efe3"/>
+  <rect x="106" y="78" width="428" height="312" rx="30" fill="#d9c3a1"/>
+  <rect x="178" y="142" width="284" height="184" rx="20" fill="#fbf8f2"/>
+  <circle cx="320" cy="234" r="48" fill="#8b6f47"/>
+  <text x="320" y="426" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#5d4228">Imagen 09</text>
+</svg>

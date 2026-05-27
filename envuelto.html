@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Envuelto — Packaging con identidad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+
+<div id="main-nav"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-tag">Packaging sustentable</p>
+    <h1 class="hero-h1">Packaging sustentable para un <em>futuro consciente</em></h1>
+    <p class="hero-sub">Creamos soluciones ecológicas e innovadoras que reducen el impacto ambiental sin perder diseño ni funcionalidad.</p>
+    <div class="hero-actions">
+      <a href="nosotros.html" class="btn-primary">Conocenos</a>
+      <a href="nosotros.html#ciclo" class="btn-ghost">
+        Ver proceso
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-visual">
+      <img src="assets/hero-packaging-sustentable.png" alt="Packaging sustentable con cajas kraft, bolsas ecológicas y materiales compostables">
+    </div>
+  </div>
+  <div class="scroll-line"></div>
+  <p class="hero-scroll-hint">Scroll</p>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-num">+500</span>
+    <span class="stat-label">marcas activas</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">100%</span>
+    <span class="stat-label">materiales ecológicos</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">3–5</span>
+    <span class="stat-label">días de entrega</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">desde Bs. 0,84</span>
+    <span class="stat-label">por unidad</span>
+  </div>
+</div>
+
+<!-- ABOUT / NOSOTROS -->
+<section class="about-section" id="nosotros" hidden>
+  <div class="about-intro">
+    <p class="section-tag fade-up">Nosotros</p>
+    <h2 class="fade-up">Diseñamos packaging con <em>propósito</em></h2>
+    <p class="fade-up">Somos una empresa especializada en packaging sustentable y ecológico. Desarrollamos soluciones responsables que combinan innovación, funcionalidad y compromiso ambiental para crear envases alineados con una economía circular.</p>
+  </div>
+
+  <div class="about-video fade-up" id="proceso">
+    <div class="video-copy">
+      <p class="section-tag">Video de presentación</p>
+      <h3>Conocé nuestra visión</h3>
+      <p>Descubrí cómo transformamos materiales responsables en experiencias sostenibles para marcas y consumidores.</p>
+    </div>
+    <button class="video-frame" type="button" aria-label="Reproducir video corporativo de Envuelto">
+      <svg viewBox="0 0 720 405" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="720" height="405" rx="28" fill="#1C1612"/>
+        <rect x="0" y="0" width="720" height="405" rx="28" fill="#1C1612" opacity="0.42"/>
+        <g transform="translate(86 74)">
+          <rect x="0" y="82" width="162" height="166" rx="12" fill="#C4A882"/>
+          <path d="M0 82 L81 34 L162 82" fill="#B8965A"/>
+          <rect x="32" y="124" width="98" height="58" rx="6" fill="#F5F0E8"/>
+          <text x="81" y="158" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#8B6F47" font-style="italic">envuelto</text>
+        </g>
+        <g transform="translate(458 78)">
+          <path d="M36 0 C84 8 102 42 98 90 C52 84 22 56 36 0 Z" fill="#6B7252"/>
+          <path d="M48 16 C62 40 74 62 92 82" fill="none" stroke="#A8B890" stroke-width="4"/>
+          <rect x="18" y="122" width="128" height="128" rx="14" fill="#E8DDD0"/>
+          <path d="M18 122 L82 82 L146 122" fill="#C4A882"/>
+        </g>
+        <g transform="translate(316 174)">
+          <circle cx="45" cy="45" r="45" fill="#F5F0E8"/>
+          <path d="M37 28 L68 45 L37 62 Z" fill="#1C1612"/>
+        </g>
+        <rect x="46" y="330" width="628" height="1" fill="#F5F0E8" opacity="0.16"/>
+        <text x="72" y="358" font-family="DM Sans, Arial, sans-serif" font-size="13" fill="#F5F0E8" opacity="0.74" letter-spacing="3">MATERIALES RESPONSABLES · DISEÑO CONSCIENTE · ECONOMÍA CIRCULAR</text>
+      </svg>
+    </button>
+  </div>
+
+  <div class="life-cycle" id="ciclo">
+    <div class="life-cycle-header fade-up">
+      <p class="section-tag">Infografía interactiva</p>
+      <h3>El ciclo de vida de nuestro packaging</h3>
+    </div>
+    <div class="cycle-map" aria-label="Ciclo de vida de nuestro packaging">
+      <article class="cycle-step fade-up">
+        <span class="cycle-num">01</span>
+        <div class="cycle-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 8 C21 18 13 27 13 39 a19 19 0 0 0 38 0 C51 27 43 18 32 8Z"/><path d="M32 17v38M24 34h16"/></svg>
+        </div>
+        <h4>Extracción de materias primas</h4>
+        <p>Uso de materiales reciclados y renovables. Aprovechamiento responsable de recursos.</p>
+      </article>
+      <article class="cycle-step fade-up">
+        <span class="cycle-num">02</span>
+        <div class="cycle-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M12 20h40v28H12z"/><path d="M12 20 32 9l20 11M22 32h20M22 40h12"/></svg>
+        </div>
+        <h4>Diseño y producción</h4>
+        <p>Diseño eficiente y minimalista. Optimización de materiales. Producción responsable.</p>
+      </article>
+      <article class="cycle-step fade-up">
+        <span class="cycle-num">03</span>
+        <div class="cycle-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M8 24h32v20H8zM40 31h9l7 7v6H40z"/><circle cx="20" cy="48" r="4"/><circle cx="48" cy="48" r="4"/></svg>
+        </div>
+        <h4>Distribución y transporte</h4>
+        <p>Reducción de emisiones. Transporte eficiente. Menor huella de carbono.</p>
+      </article>
+      <article class="cycle-step fade-up">
+        <span class="cycle-num">04</span>
+        <div class="cycle-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M18 24v30h28V24"/><path d="M22 24c0-9 20-9 20 0"/><path d="M16 34h32"/></svg>
+        </div>
+        <h4>Uso responsable</h4>
+        <p>Reutilización y reciclaje. Consumo consciente.</p>
+      </article>
+      <article class="cycle-step fade-up">
+        <span class="cycle-num">05</span>
+        <div class="cycle-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M18 20h28l-3 34H21z"/><path d="M15 20h34M25 28v18M32 28v18M39 28v18"/><path d="M24 14h16"/></svg>
+        </div>
+        <h4>Fin de vida</h4>
+        <p>Packaging reciclable o compostable. Reducción de residuos.</p>
+      </article>
+      <article class="cycle-step fade-up">
+        <span class="cycle-num">06</span>
+        <div class="cycle-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 54V32"/><path d="M32 34C19 34 14 24 15 12c12 0 21 8 17 22Z"/><path d="M32 38c13 0 18-10 17-22-12 0-21 8-17 22Z"/><path d="M18 54h28"/></svg>
+        </div>
+        <h4>Reintegración natural</h4>
+        <p>Economía circular. Transformación en nuevos recursos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PURPOSE -->
+<section class="purpose" id="proposito">
+  <div class="purpose-left">
+    <p class="section-tag fade-up">Por qué importa</p>
+    <h2 class="fade-up">Tu empaque habla<br>antes que <em>tú.</em></h2>
+    <p class="fade-up">Antes de que tu cliente abra el producto, ya tomó una decisión. El packaging comunica cuidado, valores, profesionalismo. Es el primer momento de la experiencia de marca.</p>
+    <p class="fade-up">Elegir packaging ecológico no es solo una decisión ambiental. Es una decisión de identidad. Dice algo de quién eres como marca.</p>
+    <a href="#cotizar" class="btn-primary fade-up" style="margin-top: 8px; display: inline-block;">Quiero diferenciarme</a>
+  </div>
+  <div class="purpose-right">
+    <div class="purpose-card fade-up">
+      <div class="purpose-icon">✦</div>
+      <h4>Primera impresión</h4>
+      <p>El 72% de los consumidores afirma que el empaque influye en su decisión de compra.</p>
+    </div>
+    <div class="purpose-card fade-up">
+      <div class="purpose-icon">◎</div>
+      <h4>Identidad de marca</h4>
+      <p>Un empaque coherente con tu identidad genera recordación y fidelidad.</p>
+    </div>
+    <div class="purpose-card fade-up">
+      <div class="purpose-icon">❋</div>
+      <h4>Experiencia unboxing</h4>
+      <p>El momento de apertura es parte del producto. Hazlo memorable.</p>
+    </div>
+    <div class="purpose-card fade-up">
+      <div class="purpose-icon">○</div>
+      <h4>Impacto real</h4>
+      <p>Materiales que se descomponen o reutilizan, sin sacrificar la estética.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="beneficios">
+  <div class="benefits-header">
+    <div>
+      <p class="section-tag">Beneficios</p>
+      <h2>Diseño responsable que crea <em>valor real.</em></h2>
+    </div>
+    <p>Cada decisión de material, forma y cierre busca reducir impacto, mejorar la experiencia y mantener los recursos dentro del ciclo.</p>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-cell fade-up">
+      <div class="benefit-icon">♻</div>
+      <h3>Menor impacto ambiental</h3>
+      <p>Reducimos contaminación y emisiones.</p>
+    </div>
+    <div class="benefit-cell fade-up">
+      <div class="benefit-icon">◎</div>
+      <h3>Economía circular</h3>
+      <p>Los materiales continúan dentro del ciclo.</p>
+    </div>
+    <div class="benefit-cell fade-up">
+      <div class="benefit-icon">✦</div>
+      <h3>Consumidores conscientes</h3>
+      <p>Las marcas responsables generan mayor conexión.</p>
+    </div>
+    <div class="benefit-cell fade-up">
+      <div class="benefit-icon">◈</div>
+      <h3>Valor para tu marca</h3>
+      <p>Diseño sustentable que crea diferenciación.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section class="catalog" id="productos">
+  <div class="catalog-header">
+    <div>
+      <p class="section-tag">Catálogo</p>
+      <h2>Empaques para<br>cada <em>tipo de marca.</em></h2>
+    </div>
+    <div class="catalog-tabs" aria-label="Filtrar catálogo por industria">
+      <button class="tab-btn active" data-filter="todos">Todos</button>
+      <button class="tab-btn" data-filter="joyeria">Joyería & Accesorios</button>
+      <button class="tab-btn" data-filter="cafe-food">Café & Food</button>
+      <button class="tab-btn" data-filter="hogar">Hogar & Decoración</button>
+      <button class="tab-btn" data-filter="indumentaria">Indumentaria</button>
+      <button class="tab-btn" data-filter="cosmetica">Cosmética & Bienestar</button>
+    </div>
+  </div>
+  <div class="catalog-grid">
+    <div class="product-card" data-category="cafe-food">
+      <div class="product-visual" style="background: #2A241E; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/catalogo-comida.png" alt="Empaque café y food" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+      </div>
+      <div class="product-info">
+        <p class="product-cat">Café & Gourmet</p>
+        <h3 class="product-name">Caja Café & Food</h3>
+        <p class="product-desc">Diseñada para productos gourmet, repostería artesanal, granos de especialidad y entregas que necesitan conservar su frescura de forma segura y sostenible.</p>
+      </div>
+    </div>
+    <div class="product-card" data-category="indumentaria">
+      <div class="product-visual" style="background: #1E2218; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/catalogo-ropa.png" alt="Empaque indumentaria" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+      </div>
+      <div class="product-info">
+        <p class="product-cat">Moda Consciente</p>
+        <h3 class="product-name">Ecopackaging Textil</h3>
+        <p class="product-desc">Sobres compostables (mailers), fajas de papel y bolsas de tocuyo reutilizables. Protege tus prendas impresiona en el unboxing de tu e-commerce sin generar plásticos de un solo uso.</p>
+      </div>
+    </div>
+    <div class="product-card" data-category="cosmetica">
+      <div class="product-visual" style="background: #1C1612; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/catalogo-belleza.png" alt="Empaque cosmética y bienestar" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+      </div>
+      <div class="product-info">
+        <p class="product-cat">Bienestar & Cosmética</p>
+        <h3 class="product-name">Envases Cuidado Personal</h3>
+        <p class="product-desc">Frascos de vidrio con tapas de bambú, tubos de cartón para sólidos y envases de aluminio reciclables. Envases puros, limpios y coherentes con la belleza natural de tus fórmulas.</p>
+      </div>
+    </div>
+    <div class="product-card" data-category="joyeria">
+      <div class="product-visual" style="background: #251B17; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/catalogo-joyeria.png" alt="Empaque joyería y accesorios" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+      </div>
+      <div class="product-info">
+        <p class="product-cat">Detalles & Joyería</p>
+        <h3 class="product-name">Cajas Rígidas Premium</h3>
+        <p class="product-desc">Formatos pequeños, cajas autoarmables y bolsas mini de papel kraft texturizado. El empaque perfecto para piezas delicadas, ilustraciones o accesorios que buscan un aire minimalista y de lujo consciente.</p>
+      </div>
+    </div>
+    <div class="product-card" data-category="hogar">
+      <div class="product-visual" style="background: #23221B; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/catalogo-hogar.png" alt="Empaque hogar y decoración" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+      </div>
+      <div class="product-info">
+        <p class="product-cat">Hogar & Ambientes</p>
+        <h3 class="product-name">Empaque para Elementos de Hogar</h3>
+        <p class="product-desc">Soluciones de protección geométrica como papel nido de abeja, cajas microcorrugadas y etiquetas texturizadas. Ideal para velas artesanales, cerámica, objetos de diseño y piezas frágiles que requieren máxima seguridad con estética orgánica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONALIZATION -->
+<section class="personalization" id="personaliza">
+  <div class="pers-left">
+    <p class="section-tag fade-up">Personalización</p>
+    <h2 class="fade-up">El packaging es parte<br>de tu <em>branding.</em></h2>
+    <p class="fade-up">Llevamos tu identidad visual al empaque. Logo, colores, tipografías, mensajes. Cada detalle pensado para que tu cliente sienta que lo recibió de una marca que cuida los detalles.</p>
+    <div class="pers-options fade-up">
+      <span class="pers-tag">Serigrafía</span>
+      <span class="pers-tag">Impresión digital</span>
+      <span class="pers-tag">Estampado</span>
+      <span class="pers-tag">Relieve seco</span>
+      <span class="pers-tag">Hot stamping</span>
+      <span class="pers-tag">Stickers custom</span>
+    </div>
+    <a href="#cotizar" class="btn-primary fade-up">Diseñar mi packaging</a>
+  </div>
+  <div class="pers-right fade-up">
+    <img src="assets/branding.png" alt="Personalización de packaging" style="width:100%; max-width:380px; border-radius: 10px; object-fit: cover;"/>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonios">
+  <p class="section-tag" style="justify-content: center;">Lo que dicen</p>
+  <h2>Marcas que ya <em>lo sienten.</em></h2>
+  <div class="testi-grid">
+    <div class="testi-card fade-up">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Desde que cambié mi empaque, mis clientes me dicen que sienten que compraron algo más premium. El packaging habla por mi marca."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">🕯</div>
+        <div>
+          <p class="testi-name">Sofía R.</p>
+          <p class="testi-biz">Velas artesanales · Santa Cruz</p>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card fade-up">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Nunca pensé que el packaging ecológico podía verse tan elegante. Mis amigas siempre preguntan dónde conseguí las cajitas."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">💍</div>
+        <div>
+          <p class="testi-name">Valentina M.</p>
+          <p class="testi-biz">Joyería · Cochabamba</p>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card fade-up">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Me llama mucho más la atención un producto bien empacado. Y que sea eco es el plus que me hace fiel a una marca. Mis ventas subieron un 40%."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">🧁</div>
+        <div>
+          <p class="testi-name">Camila F.</p>
+          <p class="testi-biz">Repostería creativa · La Paz</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog" id="recursos">
+  <div class="blog-header">
+    <div>
+      <p class="section-tag">Recursos</p>
+      <h2>Aprende sobre<br><em>materiales y diseño.</em></h2>
+    </div>
+    <a href="recursos.html">Ver todos los artículos →</a>
+  </div>
+  <div class="blog-grid">
+    <div class="blog-card fade-up">
+      <div class="blog-img" style="background: #2C2418;">
+        <img src="assets/biodegradable o reciclable.jpg" alt="Biodegradable o reciclable" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
+      </div>
+      <div class="blog-body">
+        <p class="blog-topic">Materiales</p>
+        <h3 class="blog-title">¿Biodegradable o reciclable? La diferencia que importa para tu marca</h3>
+        <p class="blog-excerpt">Muchas marcas usan estos términos como sinónimos, pero no lo son. Te explicamos cuál elegir según tu producto y valores.</p>
+      </div>
+    </div>
+    <div class="blog-card fade-up">
+      <div class="blog-img" style="background: #1A2018; font-size: 2rem;">
+        <img src="assets/eleva tu marca.jpg" alt="Branding y packaging" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
+      </div>
+      <div class="blog-body">
+        <p class="blog-topic">Branding</p>
+        <h3 class="blog-title">Cómo el packaging eleva la percepción de tu marca</h3>
+        <p class="blog-excerpt">El empaque es el primer contacto físico con tu producto. No lo dejes al azar.</p>
+      </div>
+    </div>
+    <div class="blog-card fade-up">
+      <div class="blog-img" style="background: #231A10;">
+        <img src="assets/5 ideas eco.jpg" alt="Inspiración eco packaging" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
+      </div>
+      <div class="blog-body">
+        <p class="blog-topic">Inspiración</p>
+        <h3 class="blog-title">5 ideas de empaques eco para marcas pequeñas con poco presupuesto</h3>
+        <p class="blog-excerpt">Opciones reales, accesibles y que se ven increíbles en foto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION / VALUES -->
+<section class="mission-values" id="valores" hidden>
+  <div class="mission-grid">
+    <article class="mission-card fade-up">
+      <p class="section-tag">Misión</p>
+      <h2>Crear packaging ecológico que combine diseño, funcionalidad y responsabilidad ambiental.</h2>
+    </article>
+    <article class="mission-card fade-up">
+      <p class="section-tag">Visión</p>
+      <h2>Impulsar un futuro donde cada envase forme parte de una economía circular.</h2>
+    </article>
+  </div>
+  <div class="values-panel fade-up">
+    <p class="section-tag">Valores</p>
+    <div class="values-list" aria-label="Valores de Envuelto">
+      <span>Sustentabilidad</span>
+      <span>Innovación</span>
+      <span>Diseño consciente</span>
+      <span>Responsabilidad</span>
+      <span>Compromiso ambiental</span>
+    </div>
+  </div>
+</section>
+
+<section class="planet-quote" aria-label="Frase final destacada" hidden>
+  <p>Pequeñas decisiones generan grandes cambios para el planeta.</p>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final" id="cotizar">
+  <div class="cta-bg-text">envuelto</div>
+  <p class="section-tag">Siguiente paso</p>
+  <h2>Tu producto ya tiene<br>potencial. Dale un empaque<br>que esté a su <em>altura.</em></h2>
+  <p>Cuéntanos sobre tu marca y te ayudamos a encontrar el empaque ideal.</p>
+  <div class="cta-actions">
+    <a href="cotiza.html" class="btn-kraft">Cotizar ahora</a>
+    <a href="https://wa.me/?text=Hola%2C%20quiero%20hablar%20sobre%20el%20packaging%20de%20mi%20marca." class="btn-outline-light" target="_blank" rel="noopener">Hablemos de tu marca</a>
+  </div>
+</section>
+
+
+<footer id="main-footer"></footer>
+
+<script src="menu.js"></script>
+<script>
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    cursor.style.transform = `translate(${mouseX - 5}px, ${mouseY - 5}px)`;
+  });
+
+  function animateRing() {
+    ringX += (mouseX - ringX - 18) * 0.15;
+    ringY += (mouseY - ringY - 18) * 0.15;
+    ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
+    requestAnimationFrame(animateRing);
+  }
+  animateRing();
+
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.transform += ' scale(1.5)';
+      ring.style.width = '56px'; ring.style.height = '56px';
+      ring.style.opacity = '0.3';
+    });
+    el.addEventListener('mouseleave', () => {
+      ring.style.width = '36px'; ring.style.height = '36px';
+      ring.style.opacity = '0.5';
+    });
+  });
+
+  // Scroll fade-up
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // About interactions
+  const videoFrame = document.querySelector('.video-frame');
+  if (videoFrame) {
+    videoFrame.addEventListener('click', () => {
+      videoFrame.classList.toggle('is-playing');
+      videoFrame.setAttribute(
+        'aria-label',
+        videoFrame.classList.contains('is-playing')
+          ? 'Pausar video corporativo de Envuelto'
+          : 'Reproducir video corporativo de Envuelto'
+      );
+    });
+  }
+
+  document.querySelectorAll('.cycle-step').forEach(step => {
+    step.addEventListener('click', () => {
+      document.querySelectorAll('.cycle-step').forEach(item => item.classList.remove('is-active'));
+      step.classList.add('is-active');
+    });
+  });
+
+  // Catalog filters
+  const catalogGrid = document.querySelector('.catalog-grid');
+  const productCards = document.querySelectorAll('.product-card[data-category]');
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      const selectedFilter = this.dataset.filter;
+      catalogGrid.classList.toggle('is-filtered', selectedFilter !== 'todos');
+
+      productCards.forEach(card => {
+        const shouldShow = selectedFilter === 'todos' || card.dataset.category === selectedFilter;
+        card.hidden = !shouldShow;
+      });
+    });
+  });
+</script>
+</body>
+</html>
+
+
