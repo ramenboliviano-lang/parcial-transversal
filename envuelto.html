@@ -245,7 +245,7 @@
   <div class="catalog-grid">
     <div class="product-card" data-category="cafe-food">
       <div class="product-visual" style="background: #2A241E; display: flex; align-items: center; justify-content: center;">
-        <img src="assets/catalogo-comida.png" alt="Empaque café y food" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+        <img src="assets/catalogo-comida.png" alt="Empaque café y food" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
       </div>
       <div class="product-info">
         <p class="product-cat">Café & Gourmet</p>
@@ -255,7 +255,7 @@
     </div>
     <div class="product-card" data-category="indumentaria">
       <div class="product-visual" style="background: #1E2218; display: flex; align-items: center; justify-content: center;">
-        <img src="assets/catalogo-ropa.png" alt="Empaque indumentaria" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+        <img src="assets/catalogo-ropa.png" alt="Empaque indumentaria" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
       </div>
       <div class="product-info">
         <p class="product-cat">Moda Consciente</p>
@@ -265,7 +265,7 @@
     </div>
     <div class="product-card" data-category="cosmetica">
       <div class="product-visual" style="background: #1C1612; display: flex; align-items: center; justify-content: center;">
-        <img src="assets/catalogo-belleza.png" alt="Empaque cosmética y bienestar" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+        <img src="assets/catalogo-belleza.png" alt="Empaque cosmética y bienestar" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
       </div>
       <div class="product-info">
         <p class="product-cat">Bienestar & Cosmética</p>
@@ -275,7 +275,7 @@
     </div>
     <div class="product-card" data-category="joyeria">
       <div class="product-visual" style="background: #251B17; display: flex; align-items: center; justify-content: center;">
-        <img src="assets/catalogo-joyeria.png" alt="Empaque joyería y accesorios" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+        <img src="assets/catalogo-joyeria.png" alt="Empaque joyería y accesorios" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
       </div>
       <div class="product-info">
         <p class="product-cat">Detalles & Joyería</p>
@@ -285,7 +285,7 @@
     </div>
     <div class="product-card" data-category="hogar">
       <div class="product-visual" style="background: #23221B; display: flex; align-items: center; justify-content: center;">
-        <img src="assets/catalogo-hogar.png" alt="Empaque hogar y decoración" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
+        <img src="assets/catalogo-hogar.png" alt="Empaque hogar y decoración" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;"/>
       </div>
       <div class="product-info">
         <p class="product-cat">Hogar & Ambientes</p>
@@ -313,7 +313,7 @@
     <a href="#cotizar" class="btn-primary fade-up">Diseñar mi packaging</a>
   </div>
   <div class="pers-right fade-up">
-    <img src="assets/branding.png" alt="Personalización de packaging" style="width:100%; max-width:380px; border-radius: 10px; object-fit: cover;"/>
+    <img src="assets/branding.png" alt="Personalización de packaging" loading="lazy" style="width:100%; max-width:380px; border-radius: 10px; object-fit: cover;"/>
   </div>
 </section>
 
@@ -370,7 +370,7 @@
   <div class="blog-grid">
     <div class="blog-card fade-up">
       <div class="blog-img" style="background: #2C2418;">
-        <img src="assets/biodegradable o reciclable.jpg" alt="Biodegradable o reciclable" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
+        <img src="assets/biodegradable o reciclable.jpg" alt="Biodegradable o reciclable" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
       </div>
       <div class="blog-body">
         <p class="blog-topic">Materiales</p>
@@ -380,7 +380,7 @@
     </div>
     <div class="blog-card fade-up">
       <div class="blog-img" style="background: #1A2018; font-size: 2rem;">
-        <img src="assets/eleva tu marca.jpg" alt="Branding y packaging" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
+        <img src="assets/eleva tu marca.jpg" alt="Branding y packaging" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
       </div>
       <div class="blog-body">
         <p class="blog-topic">Branding</p>
@@ -390,7 +390,7 @@
     </div>
     <div class="blog-card fade-up">
       <div class="blog-img" style="background: #231A10;">
-        <img src="assets/5 ideas eco.jpg" alt="Inspiración eco packaging" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
+        <img src="assets/5 ideas eco.jpg" alt="Inspiración eco packaging" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
       </div>
       <div class="blog-body">
         <p class="blog-topic">Inspiración</p>
@@ -446,36 +446,6 @@
 
 <script src="menu.js"></script>
 <script>
-  // Custom cursor
-  const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursorRing');
-  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-
-  document.addEventListener('mousemove', e => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    cursor.style.transform = `translate(${mouseX - 5}px, ${mouseY - 5}px)`;
-  });
-
-  function animateRing() {
-    ringX += (mouseX - ringX - 18) * 0.15;
-    ringY += (mouseY - ringY - 18) * 0.15;
-    ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
-    requestAnimationFrame(animateRing);
-  }
-  animateRing();
-
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.transform += ' scale(1.5)';
-      ring.style.width = '56px'; ring.style.height = '56px';
-      ring.style.opacity = '0.3';
-    });
-    el.addEventListener('mouseleave', () => {
-      ring.style.width = '36px'; ring.style.height = '36px';
-      ring.style.opacity = '0.5';
-    });
-  });
-
   // Scroll fade-up
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

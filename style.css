@@ -1,5 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+﻿*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --cream: #F5F0E8;
   --sand: #E8DDD0;
@@ -924,21 +923,21 @@ section {
 .productos-prev { left: -24px; }
 .productos-next { right: -24px; }
 .productos-arrow:hover { background: var(--brown); }
-.bolsa-kraft { background-image: url("assets/productos/bolsa-kraft.jpeg"); }
+.bolsa-kraft { background-image: url("assets/productos/bolsa-kraft.jpg"); }
 .bolsa-tela { background-image: url("assets/productos/bolsa-tela.jpeg"); }
 .mailer { background-image: url("assets/productos/mailer.jpeg"); }
 .caja-auto { background-image: url("assets/productos/caja-auto.jpeg"); }
 .caja-premium { background-image: url("assets/productos/caja-premium.jpeg"); }
 .tubo-carton { background-image: url("assets/productos/tubo-carton.jpeg"); }
-.frasco-vidrio { background-image: url("assets/productos/frasco-vidrio.jpeg"); }
-.envase-aluminio { background-image: url("assets/productos/envase-aluminio.jpeg"); }
+.frasco-vidrio { background-image: url("assets/productos/frasco-vidrio.jpg"); }
+.envase-aluminio { background-image: url("assets/productos/envase-aluminio.jpg"); }
 .pulpa-celulosa { background-image: url("assets/productos/pulpa-celulosa.jpeg"); }
 .tarjeta-semilla { background-image: url("assets/productos/tarjeta-semilla.jpeg"); }
 .hang-tag { background-image: url("assets/productos/hang-tag.jpeg"); }
-.faja-papel { background-image: url("assets/productos/faja-papel.jpeg"); }
+.faja-papel { background-image: url("assets/productos/faja-papel.jpg"); }
 .cinta-kraft { background-image: url("assets/productos/cinta-kraft.jpg"); }
 .sticker-eco { background-image: url("assets/productos/sticker-eco.jpg"); } 
-.cordon-natural { background-image: url("assets/productos/cordon-natural.jpeg"); }
+.cordon-natural { background-image: url("assets/productos/cordon-natural.jpg"); }
 .tissue { background-image: url("assets/productos/tissue.jpeg"); }
 .nido-abeja { background-image: url("assets/productos/nido-abeja.jpeg"); }
 .viruta { background-image: url("assets/productos/viruta.jpeg"); }

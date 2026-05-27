@@ -24,15 +24,15 @@
 
     <div class="about-image-gallery fade-up" id="ciclo" aria-label="Infografías sobre packaging sustentable">
       <figure class="about-image-card">
-        <img src="assets/impacto-packaging.png" alt="Infografía sobre el impacto de los packaging no sustentables en el planeta">
+        <img src="assets/impacto-packaging.png" alt="Infografía sobre el impacto de los packaging no sustentables en el planeta" loading="lazy">
         <figcaption>Impacto ambiental del packaging no sustentable</figcaption>
       </figure>
       <figure class="about-image-card about-image-card-large">
-        <img src="assets/ciclo-packaging.png" alt="Infografía del ciclo de vida del packaging sustentable">
+        <img src="assets/ciclo-packaging.png" alt="Infografía del ciclo de vida del packaging sustentable" loading="lazy">
         <figcaption>Ciclo de vida del packaging sustentable</figcaption>
       </figure>
       <figure class="about-image-card about-image-card-wide">
-        <img src="assets/basura-santa-cruz.png" alt="Gráfico sobre el aumento de basura en Santa Cruz entre 2023 y 2025">
+        <img src="assets/basura-santa-cruz.png" alt="Gráfico sobre el aumento de basura en Santa Cruz entre 2023 y 2025" loading="lazy">
         <figcaption>Aumento de basura en Santa Cruz</figcaption>
       </figure>
     </div>
@@ -106,35 +106,6 @@
 
 <script src="menu.js"></script>
 <script>
-  const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursorRing');
-  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-
-  document.addEventListener('mousemove', e => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    cursor.style.transform = `translate(${mouseX - 5}px, ${mouseY - 5}px)`;
-  });
-
-  function animateRing() {
-    ringX += (mouseX - ringX - 18) * 0.15;
-    ringY += (mouseY - ringY - 18) * 0.15;
-    ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
-    requestAnimationFrame(animateRing);
-  }
-  animateRing();
-
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.transform += ' scale(1.5)';
-      ring.style.width = '56px'; ring.style.height = '56px';
-      ring.style.opacity = '0.3';
-    });
-    el.addEventListener('mouseleave', () => {
-      ring.style.width = '36px'; ring.style.height = '36px';
-      ring.style.opacity = '0.5';
-    });
-  });
-
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('visible');
